@@ -1,0 +1,59 @@
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,400,600');
+body{
+    font-family: 'Playfair Display', serif;
+}
+.raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
+//      CSS NAVBAR
+.navbar{
+    background: transparent!important;
+}
+.navbar .collapse .navbar-nav{
+    margin-right: 180px;
+}
+
+
+//      CSS HEADER      //
+.header{
+    height: 700px;
+    background: #fff;
+}
+.header .container{
+    height: 100%;
+    align-items: center;
+}
+.header .container .mx-w{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .container .mx-w h1{
+    font-size: 60px;
+}
+.header .container .mx-w div{
+    width: 300px;
+}
+.header .container .mx-w div a{
+    background: #000;
+    color: #fff;
+    border-radius: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.header .container .model{
+    height: 100%;
+    right: -85px;
+}
+.header .container .redes{
+    transform: rotate(90deg);
+    right: -30px;
+    top: calc(700px - 46%);
+    font-weight: 700;
+}
+.header .container .redes .fab{
+    transform: rotate(-90deg);
+}
