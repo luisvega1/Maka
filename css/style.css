@@ -13,7 +13,8 @@ body {
 
 .header {
   height: 700px;
-  background: #fff; }
+  background: #fff;
+  overflow: hidden; }
 
 .header .container {
   height: 100%;
@@ -61,3 +62,27 @@ body {
 .header .container .redes .fab {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg); }
+
+.banner {
+  height: 800px;
+  background: url("../images/modelo-bn-grande.png") no-repeat center;
+  background-size: cover;
+  color: #fff; }
+  .banner .container {
+    height: 100%; }
+    .banner .container .row {
+      height: 100%; }
+      .banner .container .row .moda {
+        font-size: 120px;
+        line-height: 120px; }
+        .banner .container .row .moda span {
+          color: #e00a12; }
+      .banner .container .row img {
+        margin-left: 50%; }
+
+.tienda .cont-int {
+  max-width: 80%;
+  width: 80%; }
+  .tienda .cont-int .pagination a {
+    border: none !important;
+    color: #000; }
