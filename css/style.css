@@ -86,3 +86,20 @@ body {
   .tienda .cont-int .pagination a {
     border: none !important;
     color: #000; }
+  .tienda .cont-int .elementos .articulo {
+    max-width: 210px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px; }
+    .tienda .cont-int .elementos .articulo p {
+      font-weight: 700; }
+    .tienda .cont-int .elementos .articulo .btn {
+      width: 50px;
+      color: #000;
+      border: 1px solid #c7c3c0;
+      border-radius: 0; }

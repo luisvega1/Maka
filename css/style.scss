@@ -92,5 +92,20 @@ body{
             border: none!important;
             color: #000;
         }
+        .elementos .articulo{
+            max-width: 210px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            p{
+                font-weight: 700;
+            }
+            .btn{
+                width: 50px;
+                color: #000;
+                border: 1px solid #c7c3c0;
+                border-radius: 0;
+            }
+        }
     }
 }
