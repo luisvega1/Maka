@@ -84,6 +84,23 @@ body{
 } 
 
 //      CSS TIENDA      //
+.items2{
+    margin-right: auto;
+    margin-left: 26px;
+}
+.items3{
+    margin-right: 236px;
+}
+.title-ropa{
+    transform: rotate(90deg);
+    right: 0;
+    top: 70px;
+}
+.title-accesorios{
+    right: -46px;
+    transform: rotate(90deg);
+    top: 74px;
+}
 .tienda{
     .cont-int{
         max-width: 80%;
