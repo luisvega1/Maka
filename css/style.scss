@@ -3,6 +3,9 @@
 body{
     font-family: 'Playfair Display', serif;
 }
+.playfair{
+    font-family: 'Playfair Display', serif;
+}
 .raleway{
     font-family: 'Raleway', sans-serif;
 }
@@ -13,6 +16,16 @@ body{
 }
 .navbar .collapse .navbar-nav{
     margin-right: 180px;
+}
+.scrolled{
+    transition: all .3s ease-in-out;
+    background: #fff!important;
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.75);
+}
+.scrolledn{
+    transition: all .3s ease-in-out;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
@@ -27,6 +40,7 @@ body{
     align-items: center;
 }
 .header .container .mx-w{
+    z-index: 2;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -84,6 +98,10 @@ body{
 } 
 
 //      CSS TIENDA      //
+.tit-resp-rop,
+.tit-resp-acc{
+    display: none;
+}
 .items2{
     margin-right: auto;
     margin-left: 26px;
@@ -124,5 +142,154 @@ body{
                 border-radius: 0;
             }
         }
+    }
+}
+
+//      CSS CAROUSEL        //
+.carousel{
+    height: 350px;
+    .item-1{
+        background: url("../images/modelo-bn-ultima.png") center no-repeat;
+        background-size: cover;
+        height: 350px;
+        .col-sm-3{
+            img{
+                width: 120px;
+                height: 70px;
+            }
+            p,span{
+                color: #000;
+                position: absolute;
+            }
+            p{
+                font-size: 40px;
+                bottom: 15px;
+            }
+            span{
+                bottom: 0;
+                font-size: 20px;
+                right: 25px;
+            }
+        }
+        .col-sm-9{
+            height: 350px!important;
+            h1{
+                font-size: 80px;
+                color: #000;
+            }
+            span{color: #df0a10;}
+        }
+    }
+    .item-2{
+        background: url("../images/modelo-bn-ultima.png") center no-repeat;
+        background-size: cover;
+        height: 350px;
+        .col-sm-3{
+            img{
+                width: 120px;
+                height: 70px;
+            }
+            p,span{
+                color: #000;
+                position: absolute;
+            }
+            p{
+                font-size: 40px;
+                bottom: 15px;
+            }
+            span{
+                bottom: 0;
+                font-size: 20px;
+                right: 25px;
+            }
+        }
+        .col-sm-9{
+            height: 350px!important;
+            h1{
+                font-size: 80px;
+                color: #000;
+            }
+            span{color: #df0a10;}
+        }
+    }
+}
+
+//      CSS FOOTER      //
+.footer{
+    text-align: right;
+    form{
+        font-weight: 600;
+        .form-control{
+            border-color: #000;
+        }
+        .btn{
+            border-radius: 10px;
+            background: #cf0e0f;
+            color: #fff;
+            padding: 5px 20px 5px 20px;
+        }
+    }
+    .pagos{
+        p{
+            font-size: 30px;
+            line-height: 35px;
+        }
+        .f-pag{
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+//      RESPONSIVE      //
+@media(max-width: 991px){
+    .tienda {
+        .title-ropa,
+        .title-accesorios{
+            display: none;
+        }
+        .tit-resp-rop,
+        .tit-resp-acc{
+            display: block;
+        }
+    }
+    .footer{
+        .form-group{
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+    }
+}
+@media(max-width: 566px){
+    .header .mx-w{
+        width: 65%!important;
+        div{
+            flex-direction: column;
+            a{
+                width: 180px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+@media(max-width: 517px){
+    .tienda{
+        .elementos{
+            justify-content: center!important;
+            .articulo:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+@media(max-width: 450px){
+    .header .mx-w{
+        width: 90%!important;
+    }
+}
+@media(max-width: 340px){
+    .header .mx-w{
+        width: 100%!important;
     }
 }

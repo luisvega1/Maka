@@ -2,6 +2,9 @@
 body {
   font-family: 'Playfair Display', serif; }
 
+.playfair {
+  font-family: 'Playfair Display', serif; }
+
 .raleway {
   font-family: 'Raleway', sans-serif; }
 
@@ -10,6 +13,19 @@ body {
 
 .navbar .collapse .navbar-nav {
   margin-right: 180px; }
+
+.scrolled {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: #fff !important;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.75); }
+
+.scrolledn {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  margin-top: auto;
+  margin-bottom: auto; }
 
 .header {
   height: 700px;
@@ -23,6 +39,7 @@ body {
           align-items: center; }
 
 .header .container .mx-w {
+  z-index: 2;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,6 +97,10 @@ body {
       .banner .container .row img {
         margin-left: 50%; }
 
+.tit-resp-rop,
+.tit-resp-acc {
+  display: none; }
+
 .items2 {
   margin-right: auto;
   margin-left: 26px; }
@@ -122,3 +143,110 @@ body {
       color: #000;
       border: 1px solid #c7c3c0;
       border-radius: 0; }
+
+.carousel {
+  height: 350px; }
+  .carousel .item-1 {
+    background: url("../images/modelo-bn-ultima.png") center no-repeat;
+    background-size: cover;
+    height: 350px; }
+    .carousel .item-1 .col-sm-3 img {
+      width: 120px;
+      height: 70px; }
+    .carousel .item-1 .col-sm-3 p, .carousel .item-1 .col-sm-3 span {
+      color: #000;
+      position: absolute; }
+    .carousel .item-1 .col-sm-3 p {
+      font-size: 40px;
+      bottom: 15px; }
+    .carousel .item-1 .col-sm-3 span {
+      bottom: 0;
+      font-size: 20px;
+      right: 25px; }
+    .carousel .item-1 .col-sm-9 {
+      height: 350px !important; }
+      .carousel .item-1 .col-sm-9 h1 {
+        font-size: 80px;
+        color: #000; }
+      .carousel .item-1 .col-sm-9 span {
+        color: #df0a10; }
+  .carousel .item-2 {
+    background: url("../images/modelo-bn-ultima.png") center no-repeat;
+    background-size: cover;
+    height: 350px; }
+    .carousel .item-2 .col-sm-3 img {
+      width: 120px;
+      height: 70px; }
+    .carousel .item-2 .col-sm-3 p, .carousel .item-2 .col-sm-3 span {
+      color: #000;
+      position: absolute; }
+    .carousel .item-2 .col-sm-3 p {
+      font-size: 40px;
+      bottom: 15px; }
+    .carousel .item-2 .col-sm-3 span {
+      bottom: 0;
+      font-size: 20px;
+      right: 25px; }
+    .carousel .item-2 .col-sm-9 {
+      height: 350px !important; }
+      .carousel .item-2 .col-sm-9 h1 {
+        font-size: 80px;
+        color: #000; }
+      .carousel .item-2 .col-sm-9 span {
+        color: #df0a10; }
+
+.footer {
+  text-align: right; }
+  .footer form {
+    font-weight: 600; }
+    .footer form .form-control {
+      border-color: #000; }
+    .footer form .btn {
+      border-radius: 10px;
+      background: #cf0e0f;
+      color: #fff;
+      padding: 5px 20px 5px 20px; }
+  .footer .pagos p {
+    font-size: 30px;
+    line-height: 35px; }
+  .footer .pagos .f-pag p {
+    font-size: 25px; }
+
+@media (max-width: 991px) {
+  .tienda .title-ropa,
+  .tienda .title-accesorios {
+    display: none; }
+  .tienda .tit-resp-rop,
+  .tienda .tit-resp-acc {
+    display: block; }
+
+  .footer .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0; } }
+@media (max-width: 566px) {
+  .header .mx-w {
+    width: 65% !important; }
+    .header .mx-w div {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .header .mx-w div a {
+        width: 180px;
+        margin-bottom: 15px; } }
+@media (max-width: 517px) {
+  .tienda .elementos {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important; }
+    .tienda .elementos .articulo:last-child {
+      margin-right: 0; } }
+@media (max-width: 450px) {
+  .header .mx-w {
+    width: 90% !important; } }
+@media (max-width: 340px) {
+  .header .mx-w {
+    width: 100% !important; } }

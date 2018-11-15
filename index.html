@@ -83,6 +83,7 @@
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                         </ul>
                     </nav>
+                    <h1 class="tit-resp-rop playfair">Ropa</h1>
                     <div class="row elementos justify-content-between" id="conteo">
                         <div class="articulo">
                             <div class="imagen">
@@ -147,7 +148,16 @@
             </div>
             <div class="container d-flex flex-column align-items-center position-relative">
                 <div class="cont-int raleway">
+                        <h1 class="tit-resp-acc playfair" style="width: 100%; text-align: left;">Accesorios</h1>
                     <div class="row elementos justify-content-between" id="conteo2">
+                        <div class="articulo">
+                            <div class="imagen">
+                                <img src="images/accesorio-example.jpg" alt="" class="img-fluid">
+                            </div>
+                            <span class="precio-accesorio">$160.00</span>
+                            <p class="mb-1">Conjunto verano</p>
+                            <a href="" class="btn m-0 p-0">Ver</a>
+                        </div>
                         <div class="articulo">
                             <div class="imagen">
                                 <img src="images/accesorio-example.jpg" alt="" class="img-fluid">
@@ -202,12 +212,95 @@
             </div>
         </section>
 
-        <!-- FOOTER -->
-        <section class="footer">
-            
+        <!-- CAROUSEL -->
+        <section class="carousel">
+            <div class="owl-carousel owl-theme position-relative">
+                <div class="item-1">
+                    <div class="row px-5">
+                        <div class="col-sm-3 d-flex justify-content-center align-items-center">
+                            <img src="images/maka-logo-positivo.png" class="img-fluid">
+                            <p class="m-0">Ropa y accesorios</p>
+                            <span>en Guasave, Sinaloa</span>
+                        </div>
+                        <div class="col-sm-9 h-100 d-flex flex-column justify-content-center">
+                            <h1 class="text-right">Seguridad <br>
+                                Confianza<span>.</span></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <div class="row px-5">
+                        <div class="col-sm-3 d-flex flex-column justify-content-center align-items-center">
+                            <img src="images/maka-logo-positivo.png" class="img-fluid">
+                            <p class="m-0">Ropa y accesorios</p>
+                            <span>en Guasave, Sinaloa</span>
+                        </div>
+                        <div class="col-sm-9 h-100 d-flex flex-column justify-content-center">
+                            <h1 class="text-right">Seguridad <br>
+                                Confianza<span>.</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-
+        <!-- FOOTER -->
+        <section class="footer raleway pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form>
+                            <div class="form-group row">
+                                <label for="inputNombre" class="col-sm-2 col-form-label">Nombre</label>
+                                <div class="col-sm-10">
+                                    <input type="name" class="form-control" id="inputNombre">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputApellido" class="col-sm-2 col-form-label">Apellidos</label>
+                                <div class="col-sm-10">
+                                    <input type="second-name" class="form-control" id="inputApellido">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputMensaje" class="col-sm-2 col-form-label">Mensaje</label>
+                                <div class="col-sm-10">
+                                    <textarea type="mensaje" class="form-control" id="txMensaje" style="max-height: 100px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3 d-flex justify-content-end">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                </div>
+                                <label for="inputMensaje" class="col-sm-7 col-form-label text-left pl-0" style="font-size: 10px;">Deseo recibir notificaciones de Maka Show Room</label>
+                            </div>
+                            <input type="submit" class="btn btn-light" value="enviar">
+                        </form>
+                    </div>
+                    <div class="col-sm-6 pagos d-flex flex-column justify-content-between">
+                        <p>Pregunta por nuestras <br>
+                        <strong>facilidades</strong> de <strong>pago</strong></p>
+                        <div class="f-pag">
+                            <p class="m-0">Depositos con</p>
+                            <img src="images/visa-logo.png" alt="" width="60">
+                            <img src="images/mastercard-logo.png" alt="" width="60">
+                            <p>en <strong>oxxo</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <p><strong>T.</strong> 667 123 45 67</p>
+                    <p>Maka show room ropa y accesorios 2018</p>
+                    <p><strong>makashowroom@gmail.com</strong></p>
+                </div>
+            </div>
+        </section>
 
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
@@ -230,6 +323,29 @@
             }else if(elementosAcce%4==3){
                 $(".elementos#conteo2 div:last-child").addClass("items3");
             }
+
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                nav:false,
+                mouseDrag:false,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:2000,
+                items: 1
+            });
+
+            $(document).ready(function(){
+                $(window).bind('scroll', function(){
+                var navHeight = 134;
+                    if ($(window).scrollTop() > navHeight){
+                        $('.navbar-expand-lg').addClass('scrolled');
+                        $('.navbar-collapse').addClass('scrolledn');
+                    }else{
+                        $('.navbar-expand-lg').removeClass('scrolled');
+                        $('.navbar-collapse').removeClass('scrolledn');
+                    }
+                });
+            });
             
         </script>
     </body>
